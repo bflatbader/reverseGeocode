@@ -13,7 +13,7 @@ if (navigator.geolocation) {
         $('#long').text(longitude);
 
         // Define GeoNames query URL to reverse geocode 
-        var geoNamesURL = 'http://api.geonames.org/findNearbyPostalCodesJSON?lat=' + latitude + '&lng=' + longitude + '&username=bflatbader&maxRows=1'
+        var geoNamesURL = 'https://api.geonames.org/findNearbyPostalCodesJSON?lat=' + latitude + '&lng=' + longitude + '&username=bflatbader&maxRows=1'
 
         // AJAX request
         $.ajax({
