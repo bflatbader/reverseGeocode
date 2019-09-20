@@ -1,7 +1,6 @@
 // VARIABLES
 var latitude;
 var longitude;
-var cageDataAPIkey = '615d759215544dda9fb8fe2ed1fe1fff'
 
 // HTML 5 GeoLocation API
 if (navigator.geolocation) {
@@ -13,7 +12,7 @@ if (navigator.geolocation) {
         $('#long').text(longitude);
 
         // Define GeoNames query URL to reverse geocode 
-        var geoNamesURL = 'https://api.geonames.org/findNearbyPostalCodesJSON?lat=' + latitude + '&lng=' + longitude + '&username=bflatbader&maxRows=1'
+        var geoNamesURL = 'https://secure.geonames.org/findNearbyPostalCodesJSON?lat=' + latitude + '&lng=' + longitude + '&username=bflatbader&maxRows=1'
 
         // AJAX request
         $.ajax({
